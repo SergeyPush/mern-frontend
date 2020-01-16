@@ -33,6 +33,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Users} />
         <Route path="/places/:placeId" component={UpdatePlace} />
+        <Route path="/:userId/places" component={UserPlaces} />
         <Route path="/auth" component={Auth} />
         <Redirect to="/auth" />
       </Switch>
